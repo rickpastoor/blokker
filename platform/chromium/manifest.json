@@ -1,0 +1,19 @@
+{
+	"name": "Blokker",
+	"version": "BLOKKER_VERSION",
+	"description": "Blocks YouTube, Twitter and Facebook feed",
+	"content_scripts": [
+		{
+      "run_at": "document_end",
+			"matches": ["https://www.youtube.com/*", "https://twitter.com/*", "https://www.facebook.com/*"],
+			"js": ["blokker.js"],
+			"css": ["blokker.css"]
+		}
+	],
+	"manifest_version" : 2,
+	"icons": {
+		"48": "img/icon48.png",
+		"128": "img/icon128.png",
+		"1024": "img/icon1024.png"
+	}
+}
