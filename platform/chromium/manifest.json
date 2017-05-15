@@ -1,7 +1,7 @@
 {
 	"name": "Blokker",
 	"version": "BLOKKER_VERSION",
-	"description": "Blocks YouTube, Twitter and Facebook feed",
+	"description": "Blocks YouTube, Twitter and Facebook feed.",
 	"content_scripts": [
 		{
       "run_at": "document_end",

@@ -9,23 +9,21 @@ echo "*** blokker.firefox: Copying files"
 DES=dist/build/blokker.firefox
 rm -rf $DES
 mkdir -p $DES
-mkdir -p $DES/data
+mkdir -p $DES/img
 
-cp -R src/*                             $DES/data
-cp    platform/firefox/index.js         $DES/
-cp    platform/firefox/package.json     $DES/
-cp -R platform/chromium/img             $DES/
-mv    $DES/img/icon128.png              $DES/icon.png
+cp -R src/*                             $DES/
+cp -R platform/chromium/img/*           $DES/img
+cp    platform/firefox/manifest.json    $DES/
 
 # Replace version
-sed -i.bak 's/BLOKKER_VERSION/'$BLOKKER_VERSION'/g' $DES/package.json
-rm $DES/package.json.bak
+sed -i.bak 's/BLOKKER_VERSION/'$BLOKKER_VERSION'/g' $DES/manifest.json
+rm $DES/manifest.json.bak
 
 if [ "$1" = all ]; then
     echo "*** blokker.firefox: Creating package..."
-    pushd $DES/
-    jpm xpi
-    mv ./blokker.xpi ./../blokker.firefox.xpi
+    pushd $(dirname $DES/)
+    zip blokker.firefox.zip -qrj $(basename $DES/)
+    popd
 fi
 
-echo "*** blokker.firefox: Package done."
+echo "*** blokker(Firefox): Package done."
