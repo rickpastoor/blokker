@@ -1,0 +1,16 @@
+sudo: false
+env:
+  matrix:
+  - BROWSER=chromium EXT=zip
+  - BROWSER=firefox EXT=xpi
+script: ./tools/make-${BROWSER}.sh all
+deploy:
+  provider: releases
+  api_key:
+    secure: jFbiSxRAfFrCXGg8W+/WAAN+qatiEB1c2BknGhV/v5K1pz6SLTFaTzNElFwK17jf8e9I30TNc9QZLXYPDzbJGfXEE7TlEC2AB70tvCoo9ZrK2spztZxEEvAnbnaAyDjBaPfY+6IN/XEemElvAX0JWcQpse8yRalUqAbyOeMnYEXOOLEXFAxUGIYinGv6PN1V//ifYFfVORJxV/9LIJmoXxKnrWvMepNsFcGUYL8tkecCxu8u23qnnsg9ogeSde+survRjechJrjsZRWYtPgJMiX5UmLUBkCqVa5orV7CVPLiEdNZF10cijHUBBPFE1TJwjL01qHZhnTgmnlPJdcqHknj1zxNsWY4BxMDF5n9MqjsE0o/1LE61Onrm+rVU6rwYHWll4AFLwDEbcAY1gDMv2CJEc/z7FwbEWGht/HlAdumZS3iTz0T3M8t5Djy8cuxJveDoX24JIEv/m30vpQPHY9g6/VyU8nkLSti5vQzIva4FW4nXSz7VCyJWJgqUFi71HDiDRwsjM6rC+CG34Wm+fuCJLle7sYu20ZfcV8CSJCSgGsnfLAV03dOAHn5SWEVAEOwgQHqLvQ9bLjr1vhCIxn/+8KDgh40xABIktC+tGCVVf0zJQ25Zq2ahUuH1U9xkVhMhED6jjBsx95QB0X5R0tSMbrpsYb8l7pFnhT+69U=
+  file: dist/build/blokker.${BROWSER}.${EXT}
+  skip_cleanup: true
+  on:
+    repo: rickpastoor/blokker
+    tags: true
+    all_branches: true
