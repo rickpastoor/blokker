@@ -6,3 +6,6 @@
 
 /* Facebook */
 #stream_pagelet { visibility: hidden; }
+
+/* Geenstijl */
+.home #content *, .home #headlines, .home #klassiekers, .home #vroegah, .home #gstoppers { display: none; }

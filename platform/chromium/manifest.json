@@ -8,7 +8,8 @@
 			"matches": [
 				"*://*.youtube.com/*",
 				"*://*.twitter.com/*",
-				"*://*.facebook.com/*"
+				"*://*.facebook.com/*",
+				"*://*.geenstijl.nl/*"
 			],
 			"js": ["blokker.js"],
 			"css": ["blokker.css"]
