@@ -16,3 +16,6 @@
 /* NU.nl */
 #nu .zone[data-zone="main"] * { visibility: hidden; }
 #nu .zone[data-zone="sidebar"] .mostcombination { display: none; }
+
+/* Hackernews */
+#hnmain .itemlist { display: none; }

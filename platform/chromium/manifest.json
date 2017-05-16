@@ -11,7 +11,8 @@
 				"*://*.facebook.com/*",
 				"*://*.geenstijl.nl/*",
 				"*://*.dumpert.nl/*",
-				"*://*.nu.nl/*"
+				"*://*.nu.nl/*",
+				"*://news.ycombinator.com/*"
 			],
 			"js": ["blokker.js"],
 			"css": ["blokker.css"]
