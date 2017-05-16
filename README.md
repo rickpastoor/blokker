@@ -1,4 +1,4 @@
-# Blokker
+# Blokker [![Build Status](https://travis-ci.org/rickpastoor/blokker.svg?branch=master)](https://travis-ci.org/rickpastoor/blokker)
 
 tl;dr: Blokker helps you to be more productive by blocking social feeds.
 
