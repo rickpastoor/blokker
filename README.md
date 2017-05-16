@@ -2,7 +2,7 @@
 
 tl;dr: Blokker helps you to be more productive by blocking social feeds.
 
-[Download Blokker for Chrome](https://chrome.google.com/webstore/detail/blokker/nfbccglabkpcibhpnjlodhncnlggpkka)
+[Download Blokker for Google Chrome](https://chrome.google.com/webstore/detail/blokker/nfbccglabkpcibhpnjlodhncnlggpkka)
 
 [Download Blokker for Firefox](https://addons.mozilla.org/en-US/firefox/addon/blokker/)
 
@@ -12,7 +12,7 @@ into tweets, posts and video's you don't want to see.
 
 # Contributing
 
-## Developing and testing Chrome
+## Developing and testing Google Chrome
 
 To get started with developing your own additions to this plugin, run this command:
 
@@ -35,9 +35,9 @@ After this, load the plugin into Firefox.
 
 ## Developing and testing Safari
 
-For development, just run `tools/make-safari.sh`. Open Safari, go to the `Develop` menu and select `Show Extension Builder`. Click the small plus on the left hand side, and select `Add extension...`. Locate the compiled extension in the `dist/build` folder.
+I'm too cheap to have my own Apple Developer Account. Just run `tools/make-safari.sh`. Open Safari, go to the `Develop` menu and select `Show Extension Builder`. Click the small plus on the left hand side, and select `Add extension...`. Locate the compiled extension in the `dist/build` folder.
 
-To build your own signed version of the Blokker for Safari plugin, follow these steps:
+To build your own signed version of the Blokker for Safari plugin (for which you need to be enrolled in the Apple Developer Program), follow these steps:
 
 Install xar-js:
 

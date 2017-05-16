@@ -23,4 +23,4 @@ if [ "$1" = all ]; then
     xarjs create blokker.safariextz --cert ./../../platform/safari/cert.pem --cert ./../../platform/safari/apple-intermediate.pem --cert ./../../platform/safari/apple-root.pem --private-key ./../../platform/safari/privatekey.pem $(basename $DES/)
 fi
 
-echo "*** scrummer.safari: Package done."
+echo "*** blokker.safari: Package done."
