@@ -12,3 +12,7 @@
 
 /* Dumpert */
 .home .dump-main .dump-cnt, .home .dump-side #top5 { display: none; }
+
+/* NU.nl */
+#nu .zone[data-zone="main"] * { visibility: hidden; }
+#nu .zone[data-zone="sidebar"] .mostcombination { display: none; }

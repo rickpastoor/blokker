@@ -10,7 +10,8 @@
 				"*://*.twitter.com/*",
 				"*://*.facebook.com/*",
 				"*://*.geenstijl.nl/*",
-				"*://*.dumpert.nl/*"
+				"*://*.dumpert.nl/*",
+				"*://*.nu.nl/*"
 			],
 			"js": ["blokker.js"],
 			"css": ["blokker.css"]
