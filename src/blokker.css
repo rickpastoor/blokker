@@ -9,3 +9,6 @@
 
 /* Geenstijl */
 .home #content *, .home #headlines, .home #klassiekers, .home #vroegah, .home #gstoppers { display: none; }
+
+/* Dumpert */
+.home .dump-main .dump-cnt, .home .dump-side #top5 { display: none; }

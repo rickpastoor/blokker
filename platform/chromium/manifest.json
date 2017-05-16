@@ -9,7 +9,8 @@
 				"*://*.youtube.com/*",
 				"*://*.twitter.com/*",
 				"*://*.facebook.com/*",
-				"*://*.geenstijl.nl/*"
+				"*://*.geenstijl.nl/*",
+				"*://*.dumpert.nl/*"
 			],
 			"js": ["blokker.js"],
 			"css": ["blokker.css"]
