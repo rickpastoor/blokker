@@ -4,7 +4,6 @@
 
 source ./config
 
-echo "*** blokker(Chromium): Creating package"
 echo "*** blokker(Chromium): Copying files"
 
 DES=./dist/build/blokker.chromium
@@ -21,7 +20,7 @@ sed -i.bak 's/BLOKKER_VERSION/'$BLOKKER_VERSION'/g' $DES/manifest.json
 rm $DES/manifest.json.bak
 
 if [ "$1" = all ]; then
-    echo "*** blokker.chromium: Creating package..."
+    echo "*** blokker(Chromium): Creating package..."
     pushd $(dirname $DES/)
     zip blokker.chromium.zip -qr $(basename $DES/)/*
     popd

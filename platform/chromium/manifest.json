@@ -5,7 +5,11 @@
 	"content_scripts": [
 		{
       "run_at": "document_end",
-			"matches": ["https://www.youtube.com/*", "https://twitter.com/*", "https://www.facebook.com/*"],
+			"matches": [
+				"*://*.youtube.com/*",
+				"*://*.twitter.com/*",
+				"*://*.facebook.com/*"
+			],
 			"js": ["blokker.js"],
 			"css": ["blokker.css"]
 		}
